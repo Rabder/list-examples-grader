@@ -18,6 +18,8 @@ else
     exit 1
 fi
 
+cp student-submission/ListExamples.java TestListExamples.java grading-area
+
 
 # Draw a picture/take notes on the directory structure that's set up after
 # getting to this point
