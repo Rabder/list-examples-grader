@@ -21,8 +21,15 @@ fi
 
 cp student-submission/ListExamples.java TestListExamples.java grading-area
 
-javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java
+javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" grading-area/*.java
+if [[ $? -eq 0 ]]
+    then 
+    echo "Files compiled succesfully"
+else
+    echo "Your files failed to compile"
+fi
 java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore grading-area/*java
+
 
 # Draw a picture/take notes on the directory structure that's set up after
 # getting to this point
