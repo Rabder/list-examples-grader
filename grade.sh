@@ -21,6 +21,7 @@ fi
 
 # Copy file to grading-area
 cp -r student-submission grading-area
+cp -r . grading-area
 
 # Draw a picture/take notes on the directory structure that's set up after
 # getting to this point
