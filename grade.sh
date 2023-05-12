@@ -33,11 +33,12 @@ fi
 cd grading-area
 java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore TestListExamples > junit.txt
 
-x = "`grep "Failures:" junit.txt`"
+grep "Failures:" junit.txt > result.txt
 if [[ $? -eq 0 ]]
     then
     echo "Failures found"
-    # Find the failures
+    # Find the failure count
+    cat result.txt
 
 else
     echo "No failure"
