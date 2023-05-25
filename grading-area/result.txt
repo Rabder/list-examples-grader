@@ -1,1 +1,1 @@
-Tests run: 2,  Failures: 1
+Tests run: 4,  Failures: 4

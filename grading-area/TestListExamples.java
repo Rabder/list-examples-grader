@@ -23,4 +23,14 @@ public class TestListExamples {
   public void testAlwaysFail(){
     assertFalse(true);
   }
+  @Test
+  public void testAlwaysFail1(){
+    assertFalse(true);
+  }
+  @Test
+  public void testAlwaysFail2(){
+    assertFalse(true);
+  }
+
+
 }
