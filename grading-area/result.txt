@@ -1,1 +1,0 @@
-Tests run: 4,  Failures: 4

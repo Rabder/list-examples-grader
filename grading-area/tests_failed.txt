@@ -1,4 +1,0 @@
-1) testMergeRightEnd(TestListExamples)
-2) testAlwaysFail(TestListExamples)
-3) testAlwaysFail1(TestListExamples)
-4) testAlwaysFail2(TestListExamples)
