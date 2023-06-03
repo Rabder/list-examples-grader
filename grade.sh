@@ -1,4 +1,4 @@
-CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
+CPATH='.;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar'
  
 rm -rf student-submission
 rm -rf grading-area
@@ -22,7 +22,7 @@ fi
 cp student-submission/ListExamples.java TestListExamples.java grading-area
 cp -r lib grading-area
 
-javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar grading-area/*.java
+javac -cp $CPATH grading-area/*.java
 if [[ $? -eq 0 ]]
     then 
     echo "Files compiled succesfully"
@@ -32,7 +32,7 @@ else
 fi
 
 cd grading-area
-java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore TestListExamples > junit.txt
+java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > junit.txt
 
 # Detect if it any tests failed by looking at the JUnit output
 grep "Failures:" junit.txt > result.txt
