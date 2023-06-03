@@ -35,7 +35,7 @@ cd grading-area
 java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > junit.txt
 
 # Detect if it any tests failed by looking at the JUnit output
-grep "Failures:" junit.txt > result.txt
+grep "Failures " junit.txt > result.txt
 if [[ $? -eq 0 ]]
     then
     echo "Failures found"
